@@ -1,4 +1,4 @@
-const api_url = "https://asia-southeast2-my-portofolio-crc.cloudfunctions.net/cf-counter"
+const api_url = "https://dev-api-qgbqlzpekq-et.a.run.app/"
 async function increment(url) {
   const response = await fetch(url)
   let data = await response.json()
