@@ -1,0 +1,160 @@
+* {
+	font-family: monospace;
+}
+
+h1 {
+	font-size: 1.5em;	
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+body {
+	color: white;
+	margin: 0px;
+	/* background-color: rgb(48, 48, 48); */
+	background-color: #1d265e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#page-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	/* width: 1000px; */
+	margin: 0px;
+	flex-direction: row;
+}
+
+
+#left {
+	width: 105mm;
+	padding: 0px 10px;
+	background-color: #303F9F;
+	min-height: 100%;
+}
+
+#right {
+	width: 105mm;
+	padding: 0px 10px;	background-color: white;
+	color: black;
+	min-height: 100%;
+}
+
+#right h1 {
+	color: #303F9F;
+}
+
+#name {
+	font-size: 2em;
+	text-decoration: none;
+}
+
+#visitor-counter {
+	width: 100%;
+	
+	background-color: #253077;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#visitor {
+	margin: 10px 0;
+}
+
+.container-box {
+	margin-top: 4%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.container-box>p {
+	flex: 1 0 30%;
+	margin: 5px;
+	text-align: center;
+	background-color: #253077;
+	border-radius: 15px;
+	padding: 5px 0px;
+	margin: 3px;
+}
+
+section>div {
+	margin: 20px 0px 10px 0px;
+}
+
+h1 {
+	margin: 5px 0px 5px 0px;
+	text-decoration: underline;
+	/* font-size: 1.5em; */
+	/* font-size: large; */
+}
+
+h2 {
+	margin: 10px 0px 5px 0px;
+	/* margin: 100px; */
+}
+
+p {
+	margin: 0px 0px;
+}
+
+i {
+	margin-right: 7px;
+}
+
+ul{
+	padding-left: 3%;
+}
+
+@media only screen and (max-width:210mm) {
+	/* body{
+		font-size: 1.5em;
+	}
+
+	section>div {
+		margin: 23px 0px 10px 0px;	
+	}
+
+	#name {
+		font-size: 1.3em;	
+	} */
+
+	#page-container {
+		flex-direction: column;
+	} 
+	#right, #left {
+		width: 92%;
+		padding: 2% 4% 10% 4% ;
+
+	}
+
+
+	.container-box {
+		/* align-items: center; */
+		/* width: 50px; */
+	}
+
+	.container-box>p {
+		flex: 2 0 50%;
+	}
+	
+} 
+
+
+
+/* #page{
+	width: 100%
+}
+#left {
+	width: 50%;
+}
+
+#right {
+	width: 50%;
+	padding: 10px; */
