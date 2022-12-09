@@ -2,7 +2,7 @@ steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', '-r', '.', 'gs://bb-crc-001/']
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['compute', 'url-maps', 'invalidate-cdn-cache', 'crc-url-map','==path=/*']
+    args: ['compute', 'url-maps', 'invalidate-cdn-cache', 'crc-url-map','--path=/*']
     
 options:
   logging: CLOUD_LOGGING_ONLY
