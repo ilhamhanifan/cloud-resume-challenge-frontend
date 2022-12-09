@@ -1,0 +1,7 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: 
+    - 'gsutil cp -r . gs://bb-crc-001/'
+    
+    
+    
