@@ -1,3 +1,4 @@
+# push to cloud storage and invalidate cdn cache
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['cp', '-r', '.', 'gs://bb-crc-001/']
