@@ -1,4 +1,4 @@
-const api_url = "https://dev-api-gateway-ddfcmrbi.an.gateway.dev"
+const api_url = "https://crc-gw-id-2lcwykb8.an.gateway.dev/"
 async function increment(url) {
   const response = await fetch(url)
   let data = await response.json()
