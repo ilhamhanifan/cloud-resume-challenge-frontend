@@ -1,6 +1,4 @@
-
-name: Build and Deploy to Cloud Run
-
+name: Upload to GCS
 on:
   push:
     branches: [ "main" ]
