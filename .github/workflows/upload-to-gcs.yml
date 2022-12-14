@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
 
 env:
-  PROJECT_ID: ${{ secrets.RUN_PROJECT }}
+  PROJECT_ID: ${{ secrets.PROJECT }}
 
 jobs:
   setup-build-deploy:
@@ -25,7 +25,7 @@ jobs:
     - id: 'auth'
       uses: 'google-github-actions/auth@v1'
       with:
-        credentials_json: '${{ secrets.RUN_SA_KEY }}'
+        credentials_json: '${{ secrets.SA_KEY }}'
 
     - name: Set up Cloud SDK
       uses: google-github-actions/setup-gcloud@v1
