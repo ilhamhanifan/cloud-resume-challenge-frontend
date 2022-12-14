@@ -32,4 +32,4 @@ jobs:
 
     - name: upload to gcs
       run: |-
-        gsutil -m rsync -d -c -r . gs://backend-bucket-crc
+        gsutil -m rsync -d -c -r . gs://${{ secrets.BUCKET }}
